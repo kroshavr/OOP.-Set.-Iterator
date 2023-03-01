@@ -63,9 +63,29 @@ public class Main {
   //          System.out.println("Механик " + transportMechanicsEntry.getValue() + " обслуживает машину " + transportMechanicsEntry.getKey());
         }
 
+        Set<Driver> driverSet = new HashSet<>();
+        driverSet.add(driverB1);
+        driverSet.add(driverB2);
+        driverSet.add(driverC1);
+        driverSet.add(driverC2);
+        driverSet.add(driverD1);
+        driverSet.add(driverD2);
+        driverSet.add(driverB1);
+        System.out.println(driverSet);
 
+        List<Driver> driverList = new ArrayList<>();
+        driverList.add(driverB1);
+        driverList.add(driverB2);
+        driverList.add(driverC1);
+        driverList.add(driverC2);
+        driverList.add(driverD1);
+        driverList.add(driverD2);
+        Iterator<Driver> driverIterator = driverList.iterator();
+        while (driverIterator.hasNext()) {
+            System.out.println(driverIterator.next());
+        }
 
-//        ServiceStation serviceStation = new ServiceStation();
+        //        ServiceStation serviceStation = new ServiceStation();
 //        serviceStation.addToQueue(car2);
 //        serviceStation.technicalInspection(car2);
 
